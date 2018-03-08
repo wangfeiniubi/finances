@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+    <link rel="icon" type="image/png" href="plugins/amaze/i/favicon.png">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="plugins/amaze/i/app-icon72x72@2x.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+    <link rel="apple-touch-icon-precomposed" href="plugins/amaze/i/app-icon72x72@2x.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="plugins/amaze/i/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+
+    <link rel="stylesheet" href="plugins/amaze/css/amazeui.min.css">
+    <link rel="stylesheet" href="plugins/amaze/css/app.css">
+    <style type="text/css">
+        .w1200{
+            width: 1200px !important;max-width: 1200px;
+        }
+        .w1680{
+            width: 1680px !important;max-width: 1680px;
+        }
+        .h394{
+            height: 394px;
+            max-height: 394px !important;
+        }
+        .h394 img{
+            max-height: 394px;
+        }
+        .h82{
+            min-height: 82px;
+        }
+        .am-topbar-brand{
+            line-height: 82px;
+        }
+        .am-topbar-nav>li>a{
+            line-height: 82px;
+        }
+        .am-topbar{
+            line-height: 82px;
+        }
+        .am-with-topbar-fixed-top{
+            padding-top: 83px;
+        }
+        .clearpl{
+            padding-left: 0 !important;
+        }
+        .clearpr{
+            padding-right: 0 !important;
+        }
+
+        /***/
+        p{
+            display: block;
+            margin: 0;
+            padding: 0;
+            -webkit-margin-before: 1em;
+            -webkit-margin-after: 1em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style-type: none;
+        }
+        .index-tab{
+            width: 148px;
+            float: left;
+        }
+        .index-tab li{
+            width: 148px;
+            height: 135px;
+            margin-bottom: 1px;
+            text-align: center;
+            padding: 28px 0;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            background-color: #e3f2fc;
+            cursor: pointer;
+            position: relative;
+        }
+        .index-tab li p{
+            font-size: 18px;
+        }
+        .index-tab li i{
+            width: 50px;
+            height: 50px;
+            display: block;
+            margin: 0 auto 10px;
+        }
+        .index-tab li .index-t_bg.t_bg1{
+            background-position: 6px 6px;
+        }
+        .index-tab li.z-cut .index-t_bg {
+            background: url(http://www.cdt-cw.com/images/icon8.png) no-repeat;
+        }
+        /*.index-tab li .index-t_bg {
+            background: url(http://www.cdt-cw.com/images/icon7.png) no-repeat;
+        }*/
+        .index-right {
+            width: 1052px;
+            height: 407px;
+            float: left;
+            overflow: hidden;
+        }
+        .index-tab li.z-cut{
+            background-color: #015eb7;
+        }
+        .index-tab li.z-cut:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: -8px;
+            margin-top: -8px;
+            padding: 8px;
+            background: #fff;
+            border-right: 0;
+            border-bottom: 0;
+            transform: rotate(45deg);
+        }
+        .index-tab li.z-cut p{
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="am-container am-topbar am-topbar-fixed-top w1680 h82">
+            <div class="am-container w1680">
+                <h1 class="am-topbar-brand">
+                    <img src="http://www.cdt-cw.com/images/logo.gif" />
+                    <!--Good Boy!-->
+                </h1>
+                <button class="am-topbar-btn am-topbar-toggle am-btn-sm am-btn-secondary am-show-sm-only" data-am-collopase="{target='#collapse-head'}">
+                    <span class="am-sr-only">导航切换</span>
+                    <span class="am-icon-bars"></span>
+                </button>
+                <div id="collapse-head" class="am-collapse am-topbar-collapse am-in">
+                    <ul class="am-nav am-nav-pills am-topbar-nav">
+                        <li class="am-active"><a>首页</a></li>
+                        <li><a>公司概况</a></li>
+                        <li><a>新闻中心</a></li>
+                        <li><a>业务介绍</a></li>
+                        <li><a>政策法规</a></li>
+                        <li><a>企业文化</a></li>
+                        <li><a>人力资源</a></li>
+                        <li class="am-dropdown" data-am-dropdown="">
+                            <a class="am-dropdown-toggle" data-am-dropdown-toggle="" href="javascript:;">
+                                专项工作<span class="am-icon-caret-down"></span>
+                            </a>
+                            <ul class="am-dropdown-content">
+                                <li class="am-dropdown-header">标题</li>
+                                <li><a>1.时论社评</a></li>
+                                <li><a>2.基础设置</a></li>
+                                <li><a>3.文字排版</a></li>
+                                <li><a>4.风格样式</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="am-topbar-right">
+                        <button class="am-btn am-btn-secondary am-topbar-btn am-btn-sm">
+                            <span class="am-icon-pencil"></span>注册
+                        </button>
+                    </div>
+                    <div class="am-topbar-right"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="am-container w1680 clearpl clearpr">
+        <div class="am-slider am-slider-default h394" data-am-flexslider id="demo-slider-0">
+            <ul class="am-slides">
+                <li><img src="http://s.amazeui.org/media/i/demos/bing-1.jpg" /></li>
+                <li><img src="http://s.amazeui.org/media/i/demos/bing-2.jpg" /></li>
+                <li><img src="http://www.cdt-cw.com/images/index-bn.jpg" /></li>
+            </ul>
+        </div>
+    </div>
+    <div class="w1680">
+        <div class="am-container w1200">
+            <img src="http://www.cdt-cw.com/upload/images/2017-12-28/pic_1514444974.png" />
+            <div class="index-tab">
+                <ul>
+                    <li class="z-cut">
+                        <i class="index-t_bg t_bg1"></i>
+                        <p>大唐新闻</p>
+                    </li>
+                    <li>
+                        <i class="index-t_bg  t_bg2"></i>
+                        <p>公司新闻</p>
+                    </li>
+                    <li>
+                        <i class="index-t_bg  t_bg3"></i>
+                        <p>媒体报导</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="index-right"></div>
+            <div class="am-cf"></div>
+            <div style="color: #ccc;">
+
+                <div class="" style="background: url(http://www.cdt-cw.com/images/icon7.png); height: 380px;">13131213</div>
+            </div>
+            <h1>666</h1>
+        </div>
+    </div>
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="plugins/amaze/js/jquery.min.js"></script>
+<!--<![endif]-->
+<!--[if lte IE 8 ]>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="plugins/amaze/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+<script src="plugins/amaze/js/amazeui.min.js"></script>
+</body>
+</html>
